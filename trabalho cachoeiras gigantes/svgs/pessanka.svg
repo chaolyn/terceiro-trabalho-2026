@@ -1,0 +1,155 @@
+<svg width="300" height="390" viewBox="0 0 300 390" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="eggClip">
+      <path d="M 150 8 C 235 8, 285 120, 282 210 C 279 300, 225 382, 150 382 C 75 382, 21 300, 18 210 C 15 120, 65 8, 150 8 Z"/>
+    </clipPath>
+
+    <pattern id="checkers" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#8B0000"/>
+      <rect width="5" height="5" fill="#2a0000"/>
+      <rect x="5" y="5" width="5" height="5" fill="#2a0000"/>
+    </pattern>
+
+    <pattern id="leafCheckers" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#0d4d0d"/>
+      <rect width="3" height="3" fill="#7CB342"/>
+      <rect x="3" y="3" width="3" height="3" fill="#7CB342"/>
+    </pattern>
+
+    <g id="petal">
+      <path d="M 0 0 Q -12 -25 0 -45 Q 12 -25 0 0 Z" fill="#FFD700" stroke="#CC0000" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M 0 -6 Q -5 -22 0 -38 Q 5 -22 0 -6 Z" fill="#FFEB3B"/>
+    </g>
+
+    <g id="smallFlower">
+      <circle cx="0" cy="-7" r="5" fill="#FFD700" stroke="#CC0000" stroke-width="1.2"/>
+      <circle cx="6.7" cy="-2.2" r="5" fill="#FFD700" stroke="#CC0000" stroke-width="1.2"/>
+      <circle cx="4.1" cy="5.7" r="5" fill="#FFD700" stroke="#CC0000" stroke-width="1.2"/>
+      <circle cx="-4.1" cy="5.7" r="5" fill="#FFD700" stroke="#CC0000" stroke-width="1.2"/>
+      <circle cx="-6.7" cy="-2.2" r="5" fill="#FFD700" stroke="#CC0000" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="2.5" fill="#CC0000"/>
+    </g>
+
+    <g id="tinyFlower">
+      <circle cx="0" cy="-5" r="3.5" fill="#FFD700" stroke="#CC0000" stroke-width="0.8"/>
+      <circle cx="5" cy="0" r="3.5" fill="#FFD700" stroke="#CC0000" stroke-width="0.8"/>
+      <circle cx="0" cy="5" r="3.5" fill="#FFD700" stroke="#CC0000" stroke-width="0.8"/>
+      <circle cx="-5" cy="0" r="3.5" fill="#FFD700" stroke="#CC0000" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.8" fill="#CC0000"/>
+    </g>
+
+    <g id="leaf">
+      <path d="M 0 0 Q -15 -15 -12 -35 Q -6 -50 0 -50 Q 6 -50 12 -35 Q 15 -15 0 0 Z" fill="url(#leafCheckers)" stroke="#7CB342" stroke-width="2"/>
+      <path d="M 0 0 L 0 -50" stroke="#7CB342" stroke-width="1.2" fill="none"/>
+    </g>
+  </defs>
+
+  <ellipse cx="150" cy="375" rx="100" ry="10" fill="#000" opacity="0.4"/>
+  <path d="M 150 8 C 235 8, 285 120, 282 210 C 279 300, 225 382, 150 382 C 75 382, 21 300, 18 210 C 15 120, 65 8, 150 8 Z" fill="#0a0a0a"/>
+
+  <g clip-path="url(#eggClip)">
+    <!-- Banda superior -->
+    <path d="M 0 45 Q 150 15 300 45 L 300 90 Q 150 60 0 90 Z" fill="#8B0000"/>
+    <path d="M 0 47 Q 150 17 300 47" stroke="white" stroke-width="2" fill="none"/>
+    <g fill="white" stroke="#5a0000" stroke-width="1">
+      <polygon points="35,60 42,68 35,76 28,68"/>
+      <polygon points="65,55 72,63 65,71 58,63"/>
+      <polygon points="95,52 102,60 95,68 88,60"/>
+      <polygon points="125,50 132,58 125,66 118,58"/>
+      <polygon points="155,49 162,57 155,65 148,57"/>
+      <polygon points="185,50 192,58 185,66 178,58"/>
+      <polygon points="215,52 222,60 215,68 208,60"/>
+      <polygon points="245,55 252,63 245,71 238,63"/>
+      <polygon points="272,60 279,68 272,76 265,68"/>
+    </g>
+    <g fill="#FFD700" stroke="#8B0000" stroke-width="0.5">
+      <circle cx="50" cy="61" r="2.2"/><circle cx="80" cy="56" r="2.2"/>
+      <circle cx="110" cy="54" r="2.2"/><circle cx="140" cy="52" r="2.2"/>
+      <circle cx="170" cy="52" r="2.2"/><circle cx="200" cy="54" r="2.2"/>
+      <circle cx="230" cy="56" r="2.2"/><circle cx="258" cy="61" r="2.2"/>
+    </g>
+    <path d="M 0 88 Q 150 58 300 88" stroke="white" stroke-width="2.5" fill="none"/>
+
+    <!-- Girassol -->
+    <circle cx="150" cy="160" r="70" fill="#CC0000"/>
+    <g transform="translate(150, 160)">
+      <use href="#petal" transform="rotate(0) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(18) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(36) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(54) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(72) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(90) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(108) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(126) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(144) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(162) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(180) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(198) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(216) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(234) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(252) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(270) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(288) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(306) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(324) translate(0, -42)"/>
+      <use href="#petal" transform="rotate(342) translate(0, -42)"/>
+    </g>
+    <circle cx="150" cy="160" r="48" fill="#CC0000"/>
+    <circle cx="150" cy="160" r="42" fill="url(#checkers)" stroke="#CC0000" stroke-width="3"/>
+
+    <!-- Folhas -->
+    <g transform="translate(150, 255) rotate(220)"><use href="#leaf"/></g>
+    <g transform="translate(150, 255) rotate(140)"><use href="#leaf"/></g>
+
+    <!-- Hastes e gavinhas -->
+    <path d="M 150 220 L 150 375" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 150 300 Q 110 315 95 295 Q 85 275 105 265 Q 118 260 122 275" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 150 320 Q 190 335 205 315 Q 215 295 195 285 Q 182 280 178 295" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 150 350 Q 130 360 125 348 Q 122 338 132 335" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 150 365 Q 170 375 175 363 Q 178 353 168 350" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <g fill="#CC0000" stroke="#8B0000" stroke-width="0.8">
+      <circle cx="100" cy="277" r="4"/><circle cx="122" cy="275" r="3"/>
+      <circle cx="200" cy="297" r="4"/><circle cx="178" cy="295" r="3"/>
+      <circle cx="132" cy="335" r="3"/><circle cx="168" cy="350" r="3"/>
+    </g>
+
+    <!-- Flores espalhadas -->
+    <use href="#smallFlower" x="45" y="200"/><use href="#smallFlower" x="255" y="200"/>
+    <use href="#smallFlower" x="55" y="295"/><use href="#smallFlower" x="245" y="295"/>
+    <use href="#smallFlower" x="85" y="355"/><use href="#smallFlower" x="215" y="355"/>
+    <use href="#smallFlower" x="70" y="130"/><use href="#smallFlower" x="230" y="130"/>
+
+    <use href="#tinyFlower" x="60" y="245"/><use href="#tinyFlower" x="240" y="245"/>
+    <use href="#tinyFlower" x="90" y="180"/><use href="#tinyFlower" x="210" y="180"/>
+    <use href="#tinyFlower" x="105" y="320"/><use href="#tinyFlower" x="195" y="320"/>
+    <use href="#tinyFlower" x="40" y="270"/><use href="#tinyFlower" x="260" y="270"/>
+
+    <g fill="#CC0000">
+      <circle cx="35" cy="175" r="2.5"/><circle cx="265" cy="175" r="2.5"/>
+      <circle cx="45" cy="345" r="2.5"/><circle cx="255" cy="345" r="2.5"/>
+      <circle cx="95" cy="105" r="2"/><circle cx="205" cy="105" r="2"/>
+    </g>
+
+    <!-- Bordas laterais -->
+    <g stroke="white" stroke-width="1.5" fill="none" opacity="0.9">
+      <path d="M 28 100 Q 38 115 28 130 Q 18 145 28 160 Q 38 175 28 190 Q 18 205 28 220 Q 38 235 28 250 Q 18 265 28 280 Q 38 295 28 310"/>
+      <path d="M 42 100 Q 32 115 42 130 Q 52 145 42 160 Q 32 175 42 190 Q 52 205 42 220 Q 32 235 42 250 Q 52 265 42 280 Q 32 295 42 310"/>
+      <path d="M 272 100 Q 262 115 272 130 Q 282 145 272 160 Q 262 175 272 190 Q 282 205 272 220 Q 262 235 272 250 Q 282 265 272 280 Q 262 295 272 310"/>
+      <path d="M 258 100 Q 268 115 258 130 Q 248 145 258 160 Q 268 175 258 190 Q 248 205 258 220 Q 268 235 258 250 Q 248 265 258 280 Q 268 295 258 310"/>
+    </g>
+    <g fill="#CC0000">
+      <circle cx="33" cy="122" r="2"/><circle cx="33" cy="162" r="2"/>
+      <circle cx="33" cy="202" r="2"/><circle cx="33" cy="242" r="2"/>
+      <circle cx="33" cy="282" r="2"/><circle cx="267" cy="122" r="2"/>
+      <circle cx="267" cy="162" r="2"/><circle cx="267" cy="202" r="2"/>
+      <circle cx="267" cy="242" r="2"/><circle cx="267" cy="282" r="2"/>
+    </g>
+
+    <!-- Brilho sutil -->
+    <ellipse cx="110" cy="120" rx="30" ry="50" fill="white" opacity="0.06"/>
+    <ellipse cx="100" cy="250" rx="20" ry="40" fill="white" opacity="0.04"/>
+  </g>
+
+  <path d="M 150 8 C 235 8, 285 120, 282 210 C 279 300, 225 382, 150 382 C 75 382, 21 300, 18 210 C 15 120, 65 8, 150 8 Z" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="200" height="250" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" rx="10" fill="#2A4B35"/>
+<text x="100" y="30" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="bold">COMPOSIÇÃO ÉTNICA</text>
+<text x="20" y="65" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" font-weight="bold">Ucranianos</text>
+<text x="180" y="65" font-family="Arial, sans-serif" font-size="11" fill="#F1C40F" text-anchor="end" font-weight="bold">75%</text>
+<rect x="20" y="75" width="160" height="14" rx="4" fill="#1E3A24"/>
+<rect x="20" y="75" width="120" height="14" rx="4" fill="#F1C40F"/>
+<text x="20" y="115" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Poloneses</text>
+<text x="180" y="115" font-family="Arial, sans-serif" font-size="11" fill="#3498DB" text-anchor="end" font-weight="bold">15%</text>
+<rect x="20" y="125" width="160" height="14" rx="4" fill="#1E3A24"/>
+<rect x="20" y="125" width="24" height="14" rx="4" fill="#3498DB"/>
+<text x="20" y="165" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Alemães, Italianos</text>
+<text x="20" y="178" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">e Brasileiros</text>
+<text x="180" y="170" font-family="Arial, sans-serif" font-size="11" fill="#ECF0F1" text-anchor="end" font-weight="bold">10%</text>
+<rect x="20" y="188" width="160" height="14" rx="4" fill="#1E3A24"/>
+<rect x="20" y="188" width="16" height="14" rx="4" fill="#ECF0F1"/>
+</svg>

@@ -1,0 +1,402 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tableW" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A87848"/>
+      <stop offset="50%" stop-color="#8B5A2B"/>
+      <stop offset="100%" stop-color="#6B4423"/>
+    </linearGradient>
+    <radialGradient id="plateG" cx="40%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F5F5F0"/>
+      <stop offset="100%" stop-color="#D8D8D0"/>
+    </radialGradient>
+    <radialGradient id="pierogiBody" cx="35%" cy="25%" r="80%">
+      <stop offset="0%" stop-color="#F8E8B8"/>
+      <stop offset="50%" stop-color="#E8C878"/>
+      <stop offset="100%" stop-color="#B88840"/>
+    </radialGradient>
+    <linearGradient id="kielbasaBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B87040"/>
+      <stop offset="25%" stop-color="#A05020"/>
+      <stop offset="70%" stop-color="#7A3A10"/>
+      <stop offset="100%" stop-color="#4A2008"/>
+    </linearGradient>
+    <linearGradient id="breadBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C89858"/>
+      <stop offset="40%" stop-color="#9B6B3B"/>
+      <stop offset="100%" stop-color="#5A3A1A"/>
+    </linearGradient>
+    <linearGradient id="beerBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5E6A8"/>
+      <stop offset="60%" stop-color="#E8C860"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="mugGlass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#F5E6A8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="softSh">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="innerSh">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- MESA -->
+  <rect width="500" height="500" fill="url(#tableW)"/>
+
+  <!-- Veios da madeira -->
+  <g stroke="#3A1A00" stroke-width="1.2" fill="none" opacity="0.3">
+    <path d="M 0 40 Q 120 45 250 38 Q 380 35 500 42"/>
+    <path d="M 0 100 Q 150 108 300 100 Q 400 96 500 105"/>
+    <path d="M 0 180 Q 120 185 250 178 Q 380 175 500 182"/>
+    <path d="M 0 260 Q 150 268 300 260 Q 400 256 500 265"/>
+    <path d="M 0 350 Q 120 355 250 348 Q 380 345 500 352"/>
+    <path d="M 0 430 Q 150 438 300 430 Q 400 426 500 435"/>
+  </g>
+  <!-- Nós da madeira -->
+  <g fill="#5A3A1A" opacity="0.3">
+    <ellipse cx="80" cy="150" rx="8" ry="4"/>
+    <ellipse cx="420" cy="380" rx="6" ry="3"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== PRATO PRINCIPAL ============= -->
+  <!-- ============================================ -->
+  <g filter="url(#softSh)">
+    <ellipse cx="250" cy="295" rx="185" ry="100" fill="#A89880" opacity="0.5"/>
+    <ellipse cx="250" cy="288" rx="180" ry="95" fill="url(#plateG)" stroke="#A8A090" stroke-width="2"/>
+    <ellipse cx="250" cy="288" rx="160" ry="82" fill="none" stroke="#E0E0D8" stroke-width="1.5"/>
+    <ellipse cx="250" cy="288" rx="145" ry="73" fill="#FCFCF8"/>
+    <!-- Brilho do prato -->
+    <ellipse cx="200" cy="255" rx="60" ry="22" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== PIEROGI (6 unid) ============ -->
+  <!-- ============================================ -->
+
+  <!-- Pierogi 1 (trás esquerda) -->
+  <g transform="translate(165, 265)">
+    <path d="M -42 0 Q -42 -30 0 -30 Q 42 -30 42 0 Q 30 4 0 4 Q -30 4 -42 0 Z"
+          fill="url(#pierogiBody)" stroke="#8B6030" stroke-width="1.8"/>
+    <!-- Borda dobrada característica -->
+    <path d="M -40 -2 Q -35 -8 -28 -6 Q -20 -9 -12 -7 Q -4 -10 4 -7 Q 12 -9 20 -6 Q 28 -8 35 -6 Q 40 -4 40 -2"
+          fill="none" stroke="#8B6030" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Ondulações do repuxo -->
+    <g fill="#E8C878" stroke="#A07030" stroke-width="1">
+      <circle cx="-32" cy="-3" r="3"/>
+      <circle cx="-22" cy="-4" r="3"/>
+      <circle cx="-12" cy="-5" r="3"/>
+      <circle cx="0" cy="-5" r="3"/>
+      <circle cx="12" cy="-5" r="3"/>
+      <circle cx="22" cy="-4" r="3"/>
+      <circle cx="32" cy="-3" r="3"/>
+    </g>
+    <!-- Brilho -->
+    <ellipse cx="-15" cy="-15" rx="12" ry="5" fill="#FFFFFF" opacity="0.4"/>
+    <!-- Cebola caramelizada -->
+    <path d="M -20 -1 Q -12 -4 -4 -1" stroke="#7A3A10" stroke-width="1.2" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Pierogi 2 (trás direita) -->
+  <g transform="translate(335, 265)">
+    <path d="M -42 0 Q -42 -30 0 -30 Q 42 -30 42 0 Q 30 4 0 4 Q -30 4 -42 0 Z"
+          fill="url(#pierogiBody)" stroke="#8B6030" stroke-width="1.8"/>
+    <path d="M -40 -2 Q -35 -8 -28 -6 Q -20 -9 -12 -7 Q -4 -10 4 -7 Q 12 -9 20 -6 Q 28 -8 35 -6 Q 40 -4 40 -2"
+          fill="none" stroke="#8B6030" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#E8C878" stroke="#A07030" stroke-width="1">
+      <circle cx="-32" cy="-3" r="3"/>
+      <circle cx="-22" cy="-4" r="3"/>
+      <circle cx="-12" cy="-5" r="3"/>
+      <circle cx="0" cy="-5" r="3"/>
+      <circle cx="12" cy="-5" r="3"/>
+      <circle cx="22" cy="-4" r="3"/>
+      <circle cx="32" cy="-3" r="3"/>
+    </g>
+    <ellipse cx="15" cy="-15" rx="12" ry="5" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 4 -1 Q 12 -4 20 -1" stroke="#7A3A10" stroke-width="1.2" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Pierogi 3 (centro) -->
+  <g transform="translate(250, 275)">
+    <path d="M -45 0 Q -45 -32 0 -32 Q 45 -32 45 0 Q 32 5 0 5 Q -32 5 -45 0 Z"
+          fill="url(#pierogiBody)" stroke="#8B6030" stroke-width="2"/>
+    <path d="M -43 -2 Q -38 -9 -30 -7 Q -22 -10 -14 -8 Q -6 -11 2 -8 Q 10 -10 18 -7 Q 26 -9 33 -7 Q 40 -5 43 -2"
+          fill="none" stroke="#8B6030" stroke-width="2.8" stroke-linecap="round"/>
+    <g fill="#E8C878" stroke="#A07030" stroke-width="1.1">
+      <circle cx="-35" cy="-3" r="3.2"/>
+      <circle cx="-24" cy="-4" r="3.2"/>
+      <circle cx="-13" cy="-5" r="3.2"/>
+      <circle cx="-2" cy="-5.5" r="3.2"/>
+      <circle cx="9" cy="-5" r="3.2"/>
+      <circle cx="20" cy="-4" r="3.2"/>
+      <circle cx="31" cy="-3" r="3.2"/>
+    </g>
+    <ellipse cx="-18" cy="-16" rx="14" ry="6" fill="#FFFFFF" opacity="0.45"/>
+    <path d="M -22 -1 Q -12 -5 -2 -1" stroke="#7A3A10" stroke-width="1.3" fill="none" opacity="0.7"/>
+    <path d="M 2 -1 Q 12 -5 22 -1" stroke="#7A3A10" stroke-width="1.3" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Pierogi 4 (frente esquerda) -->
+  <g transform="translate(175, 320)">
+    <path d="M -42 0 Q -42 -30 0 -30 Q 42 -30 42 0 Q 30 4 0 4 Q -30 4 -42 0 Z"
+          fill="url(#pierogiBody)" stroke="#8B6030" stroke-width="1.8"/>
+    <path d="M -40 -2 Q -35 -8 -28 -6 Q -20 -9 -12 -7 Q -4 -10 4 -7 Q 12 -9 20 -6 Q 28 -8 35 -6 Q 40 -4 40 -2"
+          fill="none" stroke="#8B6030" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#E8C878" stroke="#A07030" stroke-width="1">
+      <circle cx="-32" cy="-3" r="3"/>
+      <circle cx="-22" cy="-4" r="3"/>
+      <circle cx="-12" cy="-5" r="3"/>
+      <circle cx="0" cy="-5" r="3"/>
+      <circle cx="12" cy="-5" r="3"/>
+      <circle cx="22" cy="-4" r="3"/>
+      <circle cx="32" cy="-3" r="3"/>
+    </g>
+    <ellipse cx="-15" cy="-15" rx="12" ry="5" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Pierogi 5 (frente direita) -->
+  <g transform="translate(325, 320)">
+    <path d="M -42 0 Q -42 -30 0 -30 Q 42 -30 42 0 Q 30 4 0 4 Q -30 4 -42 0 Z"
+          fill="url(#pierogiBody)" stroke="#8B6030" stroke-width="1.8"/>
+    <path d="M -40 -2 Q -35 -8 -28 -6 Q -20 -9 -12 -7 Q -4 -10 4 -7 Q 12 -9 20 -6 Q 28 -8 35 -6 Q 40 -4 40 -2"
+          fill="none" stroke="#8B6030" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#E8C878" stroke="#A07030" stroke-width="1">
+      <circle cx="-32" cy="-3" r="3"/>
+      <circle cx="-22" cy="-4" r="3"/>
+      <circle cx="-12" cy="-5" r="3"/>
+      <circle cx="0" cy="-5" r="3"/>
+      <circle cx="12" cy="-5" r="3"/>
+      <circle cx="22" cy="-4" r="3"/>
+      <circle cx="32" cy="-3" r="3"/>
+    </g>
+    <ellipse cx="15" cy="-15" rx="12" ry="5" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Pierogi 6 (frente centro) -->
+  <g transform="translate(250, 335)">
+    <path d="M -45 0 Q -45 -32 0 -32 Q 45 -32 45 0 Q 32 5 0 5 Q -32 5 -45 0 Z"
+          fill="url(#pierogiBody)" stroke="#8B6030" stroke-width="2"/>
+    <path d="M -43 -2 Q -38 -9 -30 -7 Q -22 -10 -14 -8 Q -6 -11 2 -8 Q 10 -10 18 -7 Q 26 -9 33 -7 Q 40 -5 43 -2"
+          fill="none" stroke="#8B6030" stroke-width="2.8" stroke-linecap="round"/>
+    <g fill="#E8C878" stroke="#A07030" stroke-width="1.1">
+      <circle cx="-35" cy="-3" r="3.2"/>
+      <circle cx="-24" cy="-4" r="3.2"/>
+      <circle cx="-13" cy="-5" r="3.2"/>
+      <circle cx="-2" cy="-5.5" r="3.2"/>
+      <circle cx="9" cy="-5" r="3.2"/>
+      <circle cx="20" cy="-4" r="3.2"/>
+      <circle cx="31" cy="-3" r="3.2"/>
+    </g>
+    <ellipse cx="-18" cy="-16" rx="14" ry="6" fill="#FFFFFF" opacity="0.5"/>
+    <path d="M -20 -1 Q -10 -5 0 -1" stroke="#7A3A10" stroke-width="1.3" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== KIELBASA ==================== -->
+  <!-- ============================================ -->
+  <g transform="translate(400, 220) rotate(-28)" filter="url(#softSh)">
+    <!-- Corpo da linguiça -->
+    <rect x="-80" y="-16" width="160" height="32" rx="16" fill="url(#kielbasaBody)" stroke="#3A1A00" stroke-width="2"/>
+    <!-- Banda de brilho superior -->
+    <rect x="-75" y="-13" width="150" height="8" rx="4" fill="#C88050" opacity="0.5"/>
+    <!-- Textura de pele (rugas) -->
+    <g stroke="#3A1A00" stroke-width="1.2" fill="none" opacity="0.55">
+      <path d="M -65 -12 Q -65 0 -65 12"/>
+      <path d="M -50 -13 Q -50 0 -50 13"/>
+      <path d="M -35 -14 Q -35 0 -35 14"/>
+      <path d="M -20 -15 Q -20 0 -20 15"/>
+      <path d="M -5 -15 Q -5 0 -5 15"/>
+      <path d="M 10 -15 Q 10 0 10 15"/>
+      <path d="M 25 -14 Q 25 0 25 14"/>
+      <path d="M 40 -13 Q 40 0 40 13"/>
+      <path d="M 55 -12 Q 55 0 55 12"/>
+    </g>
+    <!-- Amarrações nas pontas -->
+    <ellipse cx="-80" cy="0" rx="5" ry="16" fill="#5A2E0A" stroke="#2A0A00" stroke-width="1.5"/>
+    <ellipse cx="80" cy="0" rx="5" ry="16" fill="#5A2E0A" stroke="#2A0A00" stroke-width="1.5"/>
+    <!-- Corda nas pontas -->
+    <line x1="-84" y1="-7" x2="-84" y2="7" stroke="#1A0A00" stroke-width="2.5"/>
+    <line x1="84" y1="-7" x2="84" y2="7" stroke="#1A0A00" stroke-width="2.5"/>
+    <!-- Nó na corda -->
+    <circle cx="-84" cy="-6" r="2" fill="#1A0A00"/>
+    <circle cx="84" cy="6" r="2" fill="#1A0A00"/>
+    <!-- Brilho especular -->
+    <rect x="-60" y="-12" width="110" height="3" rx="1.5" fill="#FFFFFF" opacity="0.25"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== ŚMIETANA ==================== -->
+  <!-- ============================================ -->
+  <g transform="translate(95, 380)" filter="url(#softSh)">
+    <!-- Pote de vidro -->
+    <ellipse cx="0" cy="20" rx="35" ry="8" fill="#8B5A2B" opacity="0.4"/>
+    <path d="M -32 -10 Q -35 10 -33 20 Q -30 25 0 25 Q 30 25 33 20 Q 35 10 32 -10 Z"
+          fill="#F8F8F0" stroke="#B0B0A0" stroke-width="1.5"/>
+    <!-- Nata dentro -->
+    <ellipse cx="0" cy="-10" rx="32" ry="10" fill="#FFFFFF" stroke="#D0D0C8" stroke-width="1"/>
+    <ellipse cx="0" cy="-10" rx="28" ry="7" fill="#FCFCF8"/>
+    <!-- Redemoinho -->
+    <path d="M -12 -10 Q 0 -15 12 -10" fill="none" stroke="#D8D8D0" stroke-width="1.2"/>
+    <path d="M -8 -8 Q 0 -12 8 -8" fill="none" stroke="#D8D8D0" stroke-width="1"/>
+    <!-- Cebolinha por cima -->
+    <g stroke="#2E7D32" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <path d="M -14 -12 Q -10 -20 -6 -12"/>
+      <path d="M -4 -14 Q 0 -22 4 -14"/>
+      <path d="M 8 -12 Q 12 -18 16 -12"/>
+    </g>
+    <!-- Rótulo -->
+    <rect x="-20" y="2" width="40" height="15" fill="#FFF8E0" stroke="#D4A017" stroke-width="1" rx="2"/>
+    <text x="0" y="12" font-family="serif" font-size="7" fill="#8B4513" text-anchor="middle">ŚMIETANA</text>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== CHLEB (Pão) ================= -->
+  <!-- ============================================ -->
+  <g transform="translate(75, 210)" filter="url(#softSh)">
+    <!-- Base do pão (volume) -->
+    <ellipse cx="0" cy="10" rx="50" ry="28" fill="#3A1A00" opacity="0.5"/>
+    <path d="M -50 0 Q -52 -20 -40 -30 Q -20 -40 0 -40 Q 20 -40 40 -30 Q 52 -20 50 0 Q 45 15 0 15 Q -45 15 -50 0 Z"
+          fill="url(#breadBody)" stroke="#3A1A00" stroke-width="2"/>
+    <!-- Topo mais claro -->
+    <ellipse cx="0" cy="-20" rx="40" ry="18" fill="#A87850"/>
+    <ellipse cx="0" cy="-24" rx="35" ry="12" fill="#B88850" opacity="0.7"/>
+    <!-- Corte no topo -->
+    <path d="M -30 -22 L 30 -22" stroke="#3A1A00" stroke-width="2.5" fill="none"/>
+    <path d="M -25 -20 L 25 -20" stroke="#3A1A00" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <!-- Sementes de centeio -->
+    <g fill="#2A0A00">
+      <ellipse cx="-22" cy="-28" rx="2" ry="1"/>
+      <ellipse cx="-12" cy="-31" rx="2" ry="1"/>
+      <ellipse cx="-2" cy="-32" rx="2" ry="1"/>
+      <ellipse cx="8" cy="-31" rx="2" ry="1"/>
+      <ellipse cx="18" cy="-28" rx="2" ry="1"/>
+      <ellipse cx="-15" cy="-15" rx="2" ry="1"/>
+      <ellipse cx="0" cy="-17" rx="2" ry="1"/>
+      <ellipse cx="15" cy="-15" rx="2" ry="1"/>
+      <ellipse cx="-25" cy="-8" rx="2" ry="1"/>
+      <ellipse cx="25" cy="-8" rx="2" ry="1"/>
+    </g>
+    <!-- Brilho -->
+    <ellipse cx="-15" cy="-30" rx="10" ry="3" fill="#FFFFFF" opacity="0.2"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== CERVEJA ===================== -->
+  <!-- ============================================ -->
+  <g transform="translate(420, 370)" filter="url(#softSh)">
+    <!-- Sombra -->
+    <ellipse cx="0" cy="55" rx="30" ry="6" fill="#000" opacity="0.3"/>
+    <!-- Caneca (vidro) -->
+    <path d="M -30 -50 L -30 40 Q -30 50 -20 50 L 20 50 Q 30 50 30 40 L 30 -50 Z"
+          fill="url(#mugGlass)" stroke="#B8A878" stroke-width="2"/>
+    <!-- Cerveja dentro -->
+    <path d="M -26 -30 L -26 40 Q -26 46 -18 46 L 18 46 Q 26 46 26 40 L 26 -30 Z"
+          fill="url(#beerBody)" opacity="0.9"/>
+    <!-- Espuma no topo -->
+    <ellipse cx="0" cy="-50" rx="30" ry="10" fill="#FFFFFF" stroke="#E0D8C0" stroke-width="1"/>
+    <circle cx="-15" cy="-54" r="8" fill="#FFFFFF"/>
+    <circle cx="0" cy="-57" r="9" fill="#FFFFFF"/>
+    <circle cx="15" cy="-54" r="8" fill="#FFFFFF"/>
+    <circle cx="-8" cy="-60" r="5" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="8" cy="-59" r="5" fill="#FFFFFF" opacity="0.9"/>
+    <!-- Alça -->
+    <path d="M 30 -35 Q 52 -35 52 -18 Q 52 -2 30 0" fill="none" stroke="#B8A878" stroke-width="8"/>
+    <path d="M 30 -35 Q 48 -35 48 -18 Q 48 -2 30 0" fill="none" stroke="#F5E6A8" stroke-width="4" opacity="0.6"/>
+    <!-- Bolhas -->
+    <g fill="#FFFFFF" opacity="0.4">
+      <circle cx="-12" cy="-15" r="2"/>
+      <circle cx="8" cy="-5" r="1.5"/>
+      <circle cx="-5" cy="15" r="2.5"/>
+      <circle cx="12" cy="25" r="1.8"/>
+      <circle cx="-15" cy="30" r="1.5"/>
+    </g>
+    <!-- Brilho do vidro -->
+    <rect x="-25" y="-45" width="4" height="85" fill="#FFFFFF" opacity="0.35"/>
+    <rect x="-22" y="-42" width="2" height="80" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== TEMPEROS VERDES ============= -->
+  <!-- ============================================ -->
+  <!-- Dill (esquerda superior) -->
+  <g transform="translate(35, 55)" stroke-linecap="round">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#2E7D32" stroke-width="2.5"/>
+    <g fill="#4A9F4E" stroke="#1A5A1F" stroke-width="0.5">
+      <ellipse cx="-7" cy="8" rx="7" ry="2.5" transform="rotate(-30 -7 8)"/>
+      <ellipse cx="7" cy="12" rx="7" ry="2.5" transform="rotate(30 7 12)"/>
+      <ellipse cx="-8" cy="18" rx="7" ry="2.5" transform="rotate(-30 -8 18)"/>
+      <ellipse cx="8" cy="22" rx="7" ry="2.5" transform="rotate(30 8 22)"/>
+      <ellipse cx="-7" cy="28" rx="6" ry="2.2" transform="rotate(-30 -7 28)"/>
+      <ellipse cx="7" cy="32" rx="6" ry="2.2" transform="rotate(30 7 32)"/>
+      <ellipse cx="-5" cy="38" rx="5" ry="2" transform="rotate(-30 -5 38)"/>
+    </g>
+  </g>
+
+  <!-- Dill (direita) -->
+  <g transform="translate(465, 55)" stroke-linecap="round">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#2E7D32" stroke-width="2.5"/>
+    <g fill="#4A9F4E" stroke="#1A5A1F" stroke-width="0.5">
+      <ellipse cx="-7" cy="8" rx="7" ry="2.5" transform="rotate(-30 -7 8)"/>
+      <ellipse cx="7" cy="12" rx="7" ry="2.5" transform="rotate(30 7 12)"/>
+      <ellipse cx="-8" cy="18" rx="7" ry="2.5" transform="rotate(-30 -8 18)"/>
+      <ellipse cx="8" cy="22" rx="7" ry="2.5" transform="rotate(30 8 22)"/>
+      <ellipse cx="-7" cy="28" rx="6" ry="2.2" transform="rotate(-30 -7 28)"/>
+      <ellipse cx="7" cy="32" rx="6" ry="2.2" transform="rotate(30 7 32)"/>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== GUARDANAPO ================== -->
+  <!-- ============================================ -->
+  <g transform="translate(390, 130)" filter="url(#softSh)">
+    <!-- Sombra -->
+    <rect x="-38" y="-28" width="76" height="56" fill="#000" opacity="0.15" rx="3" transform="translate(4, 4)"/>
+    <!-- Guardanapo -->
+    <rect x="-38" y="-28" width="76" height="56" fill="#FFFFFF" stroke="#D0D0D0" stroke-width="1.2" rx="3"/>
+    <!-- Bordas -->
+    <line x1="-30" y1="-20" x2="30" y2="-20" stroke="#C81818" stroke-width="1.5"/>
+    <line x1="-30" y1="-8" x2="30" y2="-8" stroke="#C81818" stroke-width="1.5"/>
+    <line x1="-30" y1="4" x2="30" y2="4" stroke="#C81818" stroke-width="1.5"/>
+    <line x1="-30" y1="16" x2="30" y2="16" stroke="#C81818" stroke-width="1.5"/>
+    <!-- Padrão de losangos -->
+    <g fill="none" stroke="#1C3F6E" stroke-width="1.3">
+      <path d="M -15 -8 L 0 -20 L 15 -8 L 0 4 Z"/>
+      <path d="M -15 16 L 0 4 L 15 16 L 0 28 Z"/>
+    </g>
+    <!-- Pontos centrais -->
+    <circle cx="0" cy="-8" r="2" fill="#FFD700"/>
+    <circle cx="0" cy="16" r="2" fill="#FFD700"/>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ============== PIMENTA (moedor) ============ -->
+  <!-- ============================================ -->
+  <g transform="translate(60, 440)" filter="url(#softSh)">
+    <ellipse cx="0" cy="30" rx="18" ry="5" fill="#000" opacity="0.3"/>
+    <path d="M -18 -25 L -18 25 Q -18 30 -12 30 L 12 30 Q 18 30 18 25 L 18 -25 Z"
+          fill="#4A2C0A" stroke="#2A1804" stroke-width="1.5"/>
+    <path d="M -14 -20 L 14 -20" stroke="#6B4423" stroke-width="1" opacity="0.6"/>
+    <path d="M -14 20 L 14 20" stroke="#6B4423" stroke-width="1" opacity="0.6"/>
+    <!-- Topo metálico -->
+    <ellipse cx="0" cy="-25" rx="18" ry="6" fill="#6B4423" stroke="#2A1804" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-30" rx="12" ry="5" fill="#8B5A2B" stroke="#2A1804" stroke-width="1"/>
+    <ellipse cx="0" cy="-34" rx="6" ry="3" fill="#A87850"/>
+    <!-- Parafuso de ajuste -->
+    <ellipse cx="0" cy="-31" rx="4" ry="2" fill="#3A1A00"/>
+    <!-- Grãos visíveis -->
+    <g fill="#1A0A00" opacity="0.7">
+      <circle cx="-8" cy="0" r="1"/>
+      <circle cx="6" cy="-8" r="1"/>
+      <circle cx="-4" cy="12" r="1"/>
+      <circle cx="10" cy="18" r="1"/>
+    </g>
+  </g>
+
+  <!-- FAIXA DECORATIVA -->
+  <rect x="0" y="488" width="500" height="5" fill="#FFFFFF"/>
+  <rect x="0" y="493" width="500" height="7" fill="#DC143C"/>
+</svg>

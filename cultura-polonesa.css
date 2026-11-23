@@ -1,0 +1,323 @@
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background-color: #03200e;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: #f4f1ea;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 36px minmax(0,1fr) 36px;
+    width: min(100%, 1440px);
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #00220f;
+    box-shadow: 0 0 50px rgba(0,0,0,.6);
+}
+
+.lateral {
+    background-color: #fff;
+    background-image: url("trabalho cachoeiras gigantes/ornamento]/depositphotos_54189955-stock-illustration-embroidery-ukrainian-national-ornament.webp");
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: 100% auto;
+    opacity: .95;
+}
+
+.site {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 54px;
+}
+
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(0,0,0,.55);
+    border-bottom: 2px solid #dc143c;
+}
+
+.secao-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #dc143c;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background: #e2e2e2;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 7px 26px;
+    border-radius: 4px;
+    transition: background .2s;
+}
+
+.btn-voltar:hover { background: #fff; }
+
+
+.hero {
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    min-height: 300px;
+}
+
+.hero-foto {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 420px;
+    object-fit: contain;
+    object-position: center;
+    border-right: 3px solid #dc143c;
+    background: #0a0a0a;
+    padding: 10px;
+}
+
+.hero-texto {
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-titulo {
+    margin: 0;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    font-weight: 900;
+    color: #dc143c;
+    letter-spacing: .02em;
+    line-height: 1;
+    border-bottom: 2px solid rgba(220,20,60,.3);
+    padding-bottom: 10px;
+}
+
+.hero-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hero-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hero-col h4 {
+    margin: 8px 0 2px;
+    font-size: .82rem;
+    font-weight: 700;
+    color: #0deb01;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+
+.hero-col p {
+    margin: 0;
+    font-size: .88rem;
+    color: #d8d5cd;
+    line-height: 1.5;
+}
+
+.hero-col img {
+    width: 100%;
+    height: 110px;
+    object-fit: contain;
+    object-position: center;
+    background: #0a0a0a;
+    border-radius: 6px;
+    border: 2px solid rgba(255,255,255,.12);
+    margin-bottom: 6px;
+    padding: 6px;
+}
+
+
+.cards-secao {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.radio-ctrl { display: none; }
+
+
+.cards-linha {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.card-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,.12);
+    background: #000;
+    transition: border-color .25s, transform .2s;
+}
+
+.card-btn:hover {
+    border-color: #dc143c;
+    transform: translateY(-3px);
+}
+
+.card-btn img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-btn span {
+    display: block;
+    width: 100%;
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background: #000;
+    letter-spacing: .04em;
+}
+
+
+.pessanka-centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pessanka-centro img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(0 0 18px rgba(220,20,60,.3));
+}
+
+
+.painel {
+    display: none;
+    background: rgba(10,20,15,.85);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 4px;
+    animation: fadeIn .3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.painel-titulo {
+    margin: 0 0 16px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #dc143c;
+    border-bottom: 2px solid rgba(220,20,60,.25);
+    padding-bottom: 8px;
+}
+
+.painel-corpo {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 22px;
+}
+
+.painel-texto h4 {
+    margin: 12px 0 4px;
+    font-size: .82rem;
+    font-weight: 700;
+    color: #0deb01;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+
+.painel-texto h4:first-child { margin-top: 0; }
+
+.painel-texto p {
+    margin: 0 0 8px;
+    font-size: .9rem;
+    color: #d8d5cd;
+    line-height: 1.6;
+}
+
+.painel-fotos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.painel-fotos img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(255,255,255,.1);
+}
+
+
+#pl-arq:checked ~ .cards-secao #painel-arq { display: block; }
+#pl-cul:checked ~ .cards-secao #painel-cul { display: block; }
+
+#pl-arq:checked ~ .cards-secao #label-arq {
+    border-color: #dc143c;
+    box-shadow: 0 0 0 2px rgba(220,20,60,.35);
+}
+
+#pl-cul:checked ~ .cards-secao #label-cul {
+    border-color: #dc143c;
+    box-shadow: 0 0 0 2px rgba(220,20,60,.35);
+}
+
+
+@media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 220px 1fr; }
+    .hero-foto { min-height: 220px; }
+    .cards-linha { grid-template-columns: 1fr 160px 1fr; }
+    .pessanka-centro img { max-width: 150px; }
+    .painel-corpo { grid-template-columns: 1fr; }
+    .painel-fotos { flex-direction: row; flex-wrap: wrap; }
+    .painel-fotos img { flex: 1 1 calc(50% - 5px); height: 90px; }
+}
+
+@media (max-width: 640px) {
+    .layout { grid-template-columns: 16px minmax(0,1fr) 16px; }
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-foto { max-height: 200px; border-right: none; border-bottom: 3px solid #dc143c; }
+    .hero-conteudo { grid-template-columns: 1fr; }
+    .cards-linha { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; }
+    .pessanka-centro { grid-column: 1 / -1; order: -1; }
+    .pessanka-centro img { max-width: 120px; }
+}

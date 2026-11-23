@@ -1,0 +1,73 @@
+<svg width="280" height="380" viewBox="0 0 280 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A4B35"/>
+      <stop offset="100%" stop-color="#1E3A24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo do card -->
+  <rect width="280" height="380" rx="12" fill="url(#cardBg)"/>
+
+  <!-- Título -->
+  <text x="140" y="32" font-family="Arial, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="bold">NÚMEROS DA FENAFEP</text>
+  <line x1="40" y1="42" x2="240" y2="42" stroke="#F1C40F" stroke-width="1" opacity="0.6"/>
+
+  <!-- === STAT 1: Visitantes === -->
+  <g transform="translate(20, 60)">
+    <rect x="0" y="0" width="240" height="62" rx="8" fill="#1E3A24" opacity="0.7"/>
+    <rect x="0" y="0" width="6" height="62" rx="3" fill="#F1C40F"/>
+    <!-- Ícone pessoas -->
+    <circle cx="32" cy="24" r="6" fill="#F1C40F"/>
+    <path d="M 18 45 Q 32 35 46 45" fill="#F1C40F"/>
+    <circle cx="24" cy="28" r="5" fill="#F1C40F" opacity="0.5"/>
+    <circle cx="40" cy="28" r="5" fill="#F1C40F" opacity="0.5"/>
+    <!-- Texto -->
+    <text x="60" y="24" font-family="Arial, sans-serif" font-size="9" fill="#B0B0B0" letter-spacing="1">VISITANTES EM 2025</text>
+    <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" fill="#F1C40F" font-weight="bold">80 mil</text>
+  </g>
+
+  <!-- === STAT 2: Panela === -->
+  <g transform="translate(20, 132)">
+    <rect x="0" y="0" width="240" height="62" rx="8" fill="#1E3A24" opacity="0.7"/>
+    <rect x="0" y="0" width="6" height="62" rx="3" fill="#3498DB"/>
+    <!-- Ícone panela -->
+    <rect x="18" y="30" width="28" height="15" rx="3" fill="#3498DB"/>
+    <rect x="15" y="26" width="34" height="5" rx="2" fill="#3498DB"/>
+    <path d="M 22 22 Q 32 16 42 22" fill="none" stroke="#3498DB" stroke-width="2.5"/>
+    <line x1="32" y1="14" x2="32" y2="22" stroke="#3498DB" stroke-width="2"/>
+    <!-- Texto -->
+    <text x="60" y="24" font-family="Arial, sans-serif" font-size="9" fill="#B0B0B0" letter-spacing="1">PESO DA PANELA</text>
+    <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" fill="#3498DB" font-weight="bold">12 ton</text>
+  </g>
+
+  <!-- === STAT 3: Feijão === -->
+  <g transform="translate(20, 204)">
+    <rect x="0" y="0" width="240" height="62" rx="8" fill="#1E3A24" opacity="0.7"/>
+    <rect x="0" y="0" width="6" height="62" rx="3" fill="#ECF0F1"/>
+    <!-- Ícone feijão -->
+    <ellipse cx="32" cy="35" rx="12" ry="8" fill="#ECF0F1"/>
+    <path d="M 24 35 Q 32 28 40 35" fill="none" stroke="#2A4B35" stroke-width="1.5"/>
+    <ellipse cx="28" cy="32" rx="2" ry="1.5" fill="#2A4B35" opacity="0.5"/>
+    <!-- Texto -->
+    <text x="60" y="24" font-family="Arial, sans-serif" font-size="9" fill="#B0B0B0" letter-spacing="1">FEIJÃO PRETO</text>
+    <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" fill="#ECF0F1" font-weight="bold">600 kg</text>
+  </g>
+
+  <!-- === STAT 4: Carnes === -->
+  <g transform="translate(20, 276)">
+    <rect x="0" y="0" width="240" height="62" rx="8" fill="#1E3A24" opacity="0.7"/>
+    <rect x="0" y="0" width="6" height="62" rx="3" fill="#E74C3C"/>
+    <!-- Ícone carne -->
+    <path d="M 20 35 Q 20 26 32 26 Q 44 26 44 35 Q 44 44 32 44 Q 20 44 20 35 Z" fill="#E74C3C"/>
+    <circle cx="32" cy="35" r="4" fill="#FFFFFF" opacity="0.6"/>
+    <path d="M 24 32 Q 28 30 32 32" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.7"/>
+    <!-- Texto -->
+    <text x="60" y="24" font-family="Arial, sans-serif" font-size="9" fill="#B0B0B0" letter-spacing="1">CARNES E EMBUTIDOS</text>
+    <text x="60" y="50" font-family="Arial, sans-serif" font-size="24" fill="#E74C3C" font-weight="bold">1,4 ton</text>
+  </g>
+
+  <!-- Rodapé -->
+  <line x1="40" y1="350" x2="240" y2="350" stroke="#F1C40F" stroke-width="1" opacity="0.4"/>
+  <text x="140" y="368" font-family="Arial, sans-serif" font-size="10" fill="#F1C40F" text-anchor="middle" font-weight="bold" letter-spacing="1.5">MAIOR FEIJOADA DO MUNDO</text>
+</svg>
